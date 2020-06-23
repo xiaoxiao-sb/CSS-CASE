@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			/*h1{
+				color:red;
+			}*/
+			/*.cy{
+				color:green;
+			}	*/
+			
+			/*
+			 * 后代选择器: 将之前的三种选择器进行结合使用,通过父级的类名,空格表示后代(包括儿子和孙子),后代可以是标签名或者类名,再通过权重的计算方式决定实现哪个
+			 * 
+			 * 权重大小:
+			 *  标签选择器 < 类选择器 < id选择器 < 行内样式 < !important
+			 *       1        10       100      1000        无穷大
+			 */
+			.sgg h3{
+				color:green;
+			}
+			
+			.sgg .zz{
+				color:blue;
+			}
+			.sgg h3 i{
+				color:deeppink;
+			}
+			.sgg i{
+				color:pink;
+			}
+			.sgg  .qr{
+				color:gold;
+			}
+			/*.zz{
+				color:brown;
+			}*/
+			.rich h3{
+				color:yellow;
+			}
+			/*#aa{
+				color:gray;
+			}*/
+		</style>
+	</head>
+	<body>
+		<div class="sgg">
+			<h1>老刘</h1>
+			<h2>班长</h2>
+			<h3 class="zz" id="aa">组长
+				<i class="qr">前任</i>
+				<i>现任</i>
+			</h3>
+			<h3>0318学员
+				<i>女朋友</i>
+			</h3>
+			<h3>0318学员</h3>
+		</div>
+		
+		
+		
+		
+		<div class="rich">
+			<h1>导游</h1>
+			<h2>司机</h2>
+			<h3 class="zz">土豪</h3>
+			<h3>富二代</h3>
+			<h3>女强人</h3>
+		</div>
+	</body>
+</html>

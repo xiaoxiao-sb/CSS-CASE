@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			/*
+			 * css层叠性:
+			 * 在设置相同属性时,选择器在权重相同的情况下,后定义的会层叠先定义的,在选择器权重不同
+			 * 的情况下,谁的权重大,听谁的
+			 * 
+			 *   权重大小:
+			 *   标签选择器<类选择器<id选择器<行内样式<!important
+			 */
+			
+			.blue {
+				font-weight: 700;
+				color: blue;
+			}
+			
+			div {
+				color: red !important;
+			}
+			
+			div {
+				font-size: 40px;
+			}
+			
+			div {
+				color: green;
+			}
+			
+			.pink {
+				color: pink;
+			}
+			
+			#gray {
+				color: #eee;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="pink blue" id="gray" style="color:gold">我是div1</div>
+		<div class="blue">我是div1</div>
+		<div class="blue">我是div1</div>
+		<div>我是div2</div>
+		<div>我是div3</div>
+	</body>
+
+</html>

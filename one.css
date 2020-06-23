@@ -1,0 +1,7 @@
+/*
+ * 直接写选择器
+ */
+span{
+	color:red;
+	font-size: 20px;
+}
